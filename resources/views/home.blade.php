@@ -1,39 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('template.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    {{-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
-        rel="stylesheet"> --}}
+@section('title')
 
-    @vite('resources/css/app.css')
-    <title>Home</title>
-</head>
-
-<body>
-    <nav class="!bg-primary border-gray-200 py-3 w-full text-white ">
-        <div class="container mx-auto items-center flex justify-between">
-            <div class="kiri flex items-center">
-                <img src="{{asset('images/logo-only.png')}}" class="w-16 mr-10" alt="Flowbite Logo" />
-                <img src="{{asset('images/search.svg')}}" class="w-8 mr-2">
-                <input type="search" placeholder="cari sepatu" class="h-full h-8 rounded-md px-2 text-black">
-            </div>
-            <div class="kanan font-normal flex items-center gap-2">
-                <a href="" class="px-2">
-                    <img src="{{asset('images/shopping-cart.svg')}}">
-                </a>
-                {{-- <a href="" class="px-2">
-                    <img src="{{asset('images/heart.svg')}}">
-                </a> --}}
-                <a href="" class="px-5 border border-white rounded-md py-1 hover:bg-white  hover:text-black">Login</a>
+@section('content')
+    <div class="w-full h-[100vh] relative" style="background: url({{asset('images/bg-web.jpg')}})">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 gap-10 items-center">
+                    <div class="text-white drop-shadow-xl">
+                        <h3 class="font-semibold text-7xl py-4 mb-5">New Arrivals</h3>
+                        <p class="text-xl">Jangan lewatkan kesempatan emas untuk memiliki sepatu limited edition yang hanya tersedia dalam jumlah terbatas. Desain eksklusif dan kualitas premium menjadikan sepatu ini pilihan sempurna untuk Anda yang ingin tampil beda dan memukau. Kenyamanan dan gaya berpadu dalam satu produk yang tak akan Anda temukan di tempat lain.</p>
+                    </div>
+                    <img src="https://studio.mrngroup.co/storage/app/media/cropped-images/Nike%20Go%20FlyEase-20210204093817.png?tr=w-600" class="w-full">
+                </div>
             </div>
         </div>
-    </nav>
-
-</body>
-
-</html>
+    </div>
+@endsection
