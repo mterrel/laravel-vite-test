@@ -18,7 +18,7 @@
     <nav class="!bg-primary py-3 w-full text-white fixed z-10">
         <div class="container mx-auto items-center flex justify-between">
             <div class="kiri flex items-center">
-                <img src="{{asset('images/logo-only.png')}}" class="w-16 mr-10" alt="Flowbite Logo" />
+                <img src="{{asset('images/logo-only.png')}}" class="w-16 mr-10" alt="Logo" />
             </div>
             <div class="kanan font-normal flex items-center gap-2">
                 <a href="" class="px-2">
