@@ -1,6 +1,1 @@
-{
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "/routes/web.php"
-    }]
-}
+{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
