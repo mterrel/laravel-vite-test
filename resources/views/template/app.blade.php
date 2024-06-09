@@ -20,9 +20,9 @@
             <div class="kiri flex items-center">
                 <img src="{{asset('images/logo-only.png')}}" class="w-16 mr-10" alt="Logo" />
             </div>
-            <div class="kanan font-normal flex items-center gap-2">
+            <div class="kanan font-normal flex items-center gap-4">
                 <a href="" class="px-2">
-                    <img src="{{asset('images/shopping-cart.svg')}}">
+                    <img src="{{asset('images/shopping-cart.svg')}}" class="w-7">
                 </a>
                 {{-- <a href="" class="px-2">
                     <img src="{{asset('images/heart.svg')}}">
@@ -35,7 +35,7 @@
     @yield('content')
 
     <footer class="bg-primary text-white text-center font-medium py-3">
-        <p>Sneakpeak All Rights Reserved @2024</p>
+        <p>©2024 Sneakpeak Exclusives All Rights Reserved</p>
     </footer>
 
 </body>

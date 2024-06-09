@@ -17,10 +17,15 @@
                 <img src="https://studio.mrngroup.co/storage/app/media/cropped-images/Nike%20Go%20FlyEase-20210204093817.png?tr=w-600"
                     class="w-full">
             </div>
+            <div class="button">
+                <a href="" class="border border-[#e09145] rounded-md p-2 bg-[#e09145] text-2xl font-normal">Belanja Sekarang</a>
+            </div>
         </div>
     </div>
 </div>
 
+
+{{-- Hero Content --}}
 <div class="text-black font-bold">
     <div class="container mx-auto">
         <h1 class="text-7xl mt-16 mb-4">Recommended For You</h1>
@@ -28,17 +33,19 @@
 
 
             {{-- <div class="bg-[#EEEEEE] rounded-xl p-4 text-center text-[#17181D] text-wrap">
-                <img src="{{asset('images/nb530-js.png')}}" class="mb-10 w-fulls">
+                <img src="{{asset('images/nb530-js.png')}}" class="mb-10 w-full">
                 <h2 class="font-normal text-2xl mb-5">New Balance 530 Juniper Sage</h2>
                 <h3 class="font-light text-xl mb-10">Rp. 1.750.000</h3>
             </div> --}}
 
-
             @foreach ($products as $product)
             <div class="bg-[#EEEEEE] rounded-xl p-4 text-center text-[#17181D] text-wrap">
-                <img src="{{asset('images/nb530-js.png')}}" class="mb-10 w-fulls">
-                <h2 class="font-normal text-2xl mb-5">{{  $product->nama  }}</h2>
-                <h3 class="font-light text-xl mb-10">Rp. {{ number_format($product->harga,2,',','.')  }}</h3>
+                <a href="" class="content-end">
+                    <img src="{{asset('images/shopping-cart-2.svg')}}" class="ml-3 mt-3 w-10">
+                </a>
+                <img src="{{asset('images/nb530-js.png')}}" class="mb-10 w-full">
+                <h2 class="font-normal text-2xl">{{  $product->nama  }}</h2>
+                <h3 class="font-light text-xl my-10">Rp. {{ number_format($product->harga,2,',','.')  }}</h3>
             </div>
 
 
