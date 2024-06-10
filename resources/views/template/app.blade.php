@@ -27,7 +27,7 @@
                 {{-- <a href="" class="px-2">
                     <img src="{{asset('images/heart.svg')}}">
                 </a> --}}
-                <a href="" class="px-5 border border-white rounded-md py-1 hover:bg-white  hover:text-black transition ease-in-out delay-150">Login</a>
+                <a href="{{route('login')}}" class="px-5 border border-white rounded-md py-1 hover:bg-white  hover:text-black transition ease-in-out delay-150">Login</a>
             </div>
         </div>
     </nav>

@@ -9,7 +9,8 @@
             <div class="grid grid-cols-2 gap-10 items-center">
                 <div class="text-white drop-shadow-xl">
                     <h3 class="font-semibold text-7xl py-4 mb-5">New Arrivals</h3>
-                    <p class="text-xl">Jangan lewatkan kesempatan emas untuk memiliki sepatu limited edition yang hanya
+                    <p class="text-4xl font-semibold italic mb-1">Nike FlyEase</p>
+                    <p class="text-xl">Jangan lewatkan kesempatan emas untuk memiliki "Nike FlyEase" yang hanya
                         tersedia dalam jumlah terbatas. Desain eksklusif dan kualitas premium menjadikan sepatu ini
                         pilihan sempurna untuk Anda yang ingin tampil beda dan memukau. Kenyamanan dan gaya berpadu
                         dalam satu produk yang tak akan Anda temukan di tempat lain.</p>
@@ -39,9 +40,9 @@
             </div> --}}
 
             @foreach ($products as $product)
-            <div class="bg-[#EEEEEE] rounded-xl p-4 text-center text-[#17181D] text-wrap">
+            <div class="bg-[#EEEEEE] rounded-xl p-4 text-center text-[#17181D] text-wrap relative">
                 <a href="" class="content-end">
-                    <img src="{{asset('images/shopping-cart-2.svg')}}" class="ml-3 mt-3 w-10">
+                    <img src="{{asset('images/shopping-cart-2.svg')}}" class="top-2 right-3 mr-3 mt-3 w-10 absolute">
                 </a>
                 <img src="{{asset('images/nb530-js.png')}}" class="mb-10 w-full">
                 <h2 class="font-normal text-2xl">{{  $product->nama  }}</h2>
