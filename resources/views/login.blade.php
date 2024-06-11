@@ -21,7 +21,7 @@
     <div class="w-full h-[100vh]">
         <div class="flex items-center justify-center w-full h-full">
 
-            <form method="POST" action="{{route('login')}}">
+            <form method="POST" action="{{route('actionLogin')}}">
                 @csrf
                 <div class="w-96 flex flex-col gap-3">
                     <h1 class="text-semibold text-center text-2xl">Login</h1>
